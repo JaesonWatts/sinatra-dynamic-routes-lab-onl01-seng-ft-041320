@@ -19,7 +19,6 @@ class App < Sinatra::Base
 
   get "/say/:number/:phrase" do 
     thismany = params[:number].to_i
-    phrase = ""
     thismany.each do 
       phrase = phrase + params[:phrase]
     end
