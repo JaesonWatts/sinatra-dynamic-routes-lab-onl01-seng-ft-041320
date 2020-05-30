@@ -21,7 +21,7 @@ class App < Sinatra::Base
     number = params[:number].to_i
 		phrase = params[:phrase]
 		string = ""
-		umber.times do
+		number.times do
 			string += phrase
 		end
 		string
