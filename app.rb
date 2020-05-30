@@ -18,11 +18,11 @@ class App < Sinatra::Base
 #  accepts a number and a phrase and returns that phrase in a single string the number of times given.
 
   get "/say/:number/:phrase" do 
-    thismany = params[:number].to_i
+    # thismany = params[:number].to_i
     # binding.pry
-    thismany.each do 
-      params[:phrase]
-    end
+    # thismany.each do 
+    #   params[:phrase]
+    # end
   end
 
   get "/say/:word1/:word2/:word3/:word4/:word5" do
