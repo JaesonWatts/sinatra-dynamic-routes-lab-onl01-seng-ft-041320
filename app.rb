@@ -21,7 +21,7 @@ class App < Sinatra::Base
     thismany = params[:number].to_i
     phrase = params[:phrase]
     thismany.times do 
-      phrase
+      puts phrase
     end
     binding.pry
   end
