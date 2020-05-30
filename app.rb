@@ -33,6 +33,16 @@ class App < Sinatra::Base
 #  accepts an operation (add, subtract, multiply or divide) and performs the operation on the two numbers provided, returning a String. For example, going to /add/1/2 should render 3 as a String.
 
   get "/:operation/:number1/:number2" do
+    if params[:operation] == add
+        result = params[:number1].to_i + params[:number2].to_i
+        result.to_s
+      elsif params[:operation] == subtract
+      
+      elsif params[:operation] == divide
+      
+      elsif params[:operation] == multiply
+      
+    end
   end
   
 
