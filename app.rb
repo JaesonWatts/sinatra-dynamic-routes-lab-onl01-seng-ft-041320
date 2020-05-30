@@ -21,6 +21,9 @@ class App < Sinatra::Base
 #  accepts a number and a phrase and returns that phrase in a single string the number of times given.
 
   get "/say/:number/:phrase" do 
+    params[:number].times do
+      params[:phrase]
+    end
   end
 
 #  accepts five words and returns a string containing all five words (i.e. word1 word2 word3 word4 word5).
