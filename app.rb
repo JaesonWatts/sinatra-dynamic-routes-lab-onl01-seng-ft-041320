@@ -5,7 +5,8 @@ class App < Sinatra::Base
   backwards.
   
   get "/reversename/:name" do
-    
+    a = params[:name]
+    a.reverse!
   end 
 
 #accepts a number and returns the square of that number. Note: Remember that values in params always come in as strings, and your return value for the route should also be a string (use .to_i and .to_s).
