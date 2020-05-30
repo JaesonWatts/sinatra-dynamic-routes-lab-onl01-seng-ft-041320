@@ -20,7 +20,7 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do 
     thismany = params[:number].to_i
     phrase = params[:phrase]
-    thismany.each do 
+    thismany.times do 
       phrase
     end
   end
